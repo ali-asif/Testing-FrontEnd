@@ -1,0 +1,150 @@
+/* contact.css */
+
+.contact {
+    background-color: #f2f2f2; 
+    padding: 50px 0;
+    font-family: 'Arial', sans-serif; 
+    padding-top: 80px;
+  }
+  
+  .contactSecondDiv {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .contactHeadDiv {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .contactHead {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .contactMainBlock {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 40px; 
+    width: 100%; 
+  }
+  
+  .form-container { 
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    width: 100%; 
+  }
+  
+  .contactForm {
+    width: 80%; 
+    padding: 30px; 
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .contactFormInputDiv {
+    margin-bottom: 20px;
+    /* Container for centering input fields */
+    display: flex;
+    flex-direction: column; /* Arrange label and input vertically */
+    align-items: flex-start; /* Align to the start (left) */
+  }
+  
+  .contactFormLabel {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555; 
+  }
+  
+  .contactFormInput {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333; 
+    box-sizing: border-box; 
+  }
+  
+  .contactFormInput:focus {
+    outline: none;
+    border-color: #9fafca;
+  }
+  
+  .contactFormButton {
+    background-color: #9fafca;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    font-weight: bold; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    /* Center the button within its container */
+    display: block; /* Make it a block-level element */
+    margin: 0 auto; /* Center horizontally */
+  }
+  
+  .contactFormButton:hover {
+    background-color: #737dc7;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  }
+  
+  /* Animated Text Section */
+  .animated-text {
+    text-align: center; 
+    width: 80%; 
+  }
+  
+  .animated-text p {
+    margin-bottom: 15px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .contactMainBlock {
+      flex-direction: column; 
+      gap: 30px;
+    }
+  
+    .form-container {
+      width: 100%; 
+    }
+  
+    .contactForm {
+      width: 100%;
+    }
+  
+    .animated-text {
+      text-align: center; 
+      width: 100%; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contactHead {
+      font-size: 28px;
+    }
+  
+    .contactFormInput {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .contactSecondDiv {
+      padding: 0 10px;
+    }
+  
+    .contactFormInput {
+      font-size: 12px;
+    }
+  }

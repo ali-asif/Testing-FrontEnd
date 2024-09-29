@@ -1,0 +1,134 @@
+/* General Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 90px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navTitle img {
+    width: 240px;
+}
+
+.navItems {
+    display: flex;
+    gap: 20px;
+}
+
+.navItems a {
+    color: #304cd1;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 22px 0;
+    transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navItems a:hover {
+    color: #ff6600;
+}
+
+/* Menu Icon */
+.menuIconDiv {
+    display: none;
+}
+
+.menuIcon {
+    font-size: 30px;
+    color: #304cd1;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.menuIcon:hover {
+    color: #ff6600;
+}
+
+/* Responsive Menu Styles */
+.responsiveMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+    z-index: 999;
+}
+
+.responsiveMenu.open {
+    transform: translateX(0);
+}
+
+.responsiveMenuItems {
+    padding: 20px;
+}
+
+.navTitle img {
+    width: 120px;
+}
+
+.cancelIcon {
+    font-size: 36px;
+    color: #555;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.menuNavItems {
+    margin-top: 50px;
+    list-style: none;
+    padding: 0;
+}
+
+.menuNavItems li {
+    margin-bottom: 30px;
+}
+
+.menuNavItems a {
+    font-size: 20px;
+    color: #304cd1;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.menuNavItems a:hover {
+    color: #ff6600;
+}
+
+.menuBarIcons {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #304cd1;
+    transition: color 0.3s ease;
+}
+
+.menuBarIcons:hover {
+    color: #ff6600;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    .navItems {
+        display: none;
+    }
+
+    .menuIconDiv {
+        display: block;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,19 @@
+.copyRight{
+    width: 100%;
+    text-align: center;
+    background-color: #404753;
+    padding: 7px 0;
+    color: rgb(255 255 255);
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    word-spacing: 5px;
+}
+
+@media (max-width:800px) {
+    .copyRight{
+        padding: 20px 0;
+        font-size: 18px;
+        word-spacing: 4px;
+    }
+     
+}

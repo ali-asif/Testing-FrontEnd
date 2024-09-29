@@ -1,0 +1,125 @@
+.mainWork {
+    width: 100%;
+    background-color: #f8f8f8; /*Light gray background */
+    padding: 40px 0; /* Increase padding */
+    overflow: hidden;
+    /* background-color: #702fa2 */
+    padding-top: 70px;
+
+}
+
+.workSecondDiv {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.workHeadDiv {
+    margin: 0 auto;
+    width: 410px;
+    text-align: center;
+}
+
+.workHead {
+    color: blue; /* Keep your blue color */
+    font-size: 36px; /* Adjust size */
+    font-family: 'Poppins', sans-serif; /* Try a modern font */
+    font-weight: 600; /* Bold heading */
+    margin-bottom: 30px;
+}
+
+.myWorkDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; /* Add space below the section */
+}
+
+.myWorkFirstDiv {
+    width: 50%;
+}
+
+.myWorkFirstDiv h1 {
+    color: #333; /* Dark gray color */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Bold heading */
+    font-size: 28px; /* Adjust size */
+}
+
+.myWorkSecondDiv {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; /* Center the work cards */
+    gap: 20px; /* Space between cards */
+}
+
+.my_work {
+    background-color: #702fa2;
+    border-radius: 10px; /* Softer rounded corners */
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left; /* Text left aligned */
+    width: calc(50% - 10px); /* Adjust width for centering and gap */
+    box-sizing: border-box;
+}
+
+.my_work:hover {
+    transform: translateY(-5px); /* Slightly lift on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+.my_work h2 {
+    color: #304cd1; /* Keep your blue color */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.workText {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif; /* Try a clean font */
+    color: #666;
+    line-height: 1.5;
+}
+
+.my_work_second {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex; /* Enable flexbox for better centering */
+    justify-content: center; /* Center items horizontally within the div */
+    align-items: center; /* Center items vertically within the div */
+}
+
+.workLevelDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.workLevelDiv div {
+    font-size: 12px;
+    color: #999; /* Lighter gray */
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1150px) {
+    .workSecondDiv {
+        width: 90%;
+    }
+
+    .my_work {
+        width: calc(100% - 20px); /* Adjust width for centering and gap */
+    }
+}
+
+@media (max-width: 500px) {
+    .my_work {
+        width: calc(100% - 20px); /* Adjust width for centering and gap */
+    }
+}

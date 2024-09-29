@@ -1,0 +1,229 @@
+.mainBlock {
+    overflow: hidden;
+    background-color: white;
+    background-size: cover;
+    background-position: 50% 0%;
+}
+
+.mainBlockSecond {
+    width: 1100px;
+    margin: 0 auto;
+}
+ 
+.mainBlockBlock {
+    width: 100%;
+    display: flex;
+}
+.myMainBlockMainDiv{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.myMainBlockDiv {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.myMainBlockDiv img {
+    width: 100%;
+    margin-top: 70px;
+}
+
+.myMainBlockExtraDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.mainBlockTextDiv{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
+    
+}
+.mainBlockTextDiv h1{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; /* Center the heading */
+}
+
+.namePara {
+    font-size: 57px;
+    color: #304cd1;
+    line-height: 0px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 2px 0;
+}
+
+.expPara {
+    line-height: 0px;
+    font-size: 50px;
+    color: #304cd1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.expDivTxt {
+    display: flex;
+    justify-content: space-between;
+    max-width: 365px;
+}
+
+.expParatxt {
+    line-height: 0px;
+    font-size: 25px;
+    color: #0000;
+    font-weight: 200 !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.githubDiv {
+    margin-top: 75px;
+    padding: 15px 10px;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: #304cd1;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px yellow;
+    border-radius: 30px;
+}
+
+.githubDiv:hover {
+    color: #304cd1;
+    background-color: white;
+}
+
+@media (max-width: 1150px) {
+    .mainBlockSecond {
+        width: 90%;
+    }
+    .myMainBlockMainDiv{
+        justify-content: center;
+    }
+    .myMainBlockDiv {
+        width: 350px;
+        height: 350px;
+    }
+    .mainBlockTextDiv{
+        width: 55%;
+        margin-left: 10%;
+        
+    }
+    .mainBlockTextDiv h1{
+        font-size: 30px;
+    }
+    .mainBlockText{
+        font-size: 20px;
+        width: 90%;
+    }
+    .namePara {
+        font-size: 45px;
+    }
+    .expDiv {
+        max-width: 400px;
+    }
+    .expPara {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 860px) {
+    .mainBlockSecond {
+        width: 90%;
+    }
+    .mainBlockBlock {
+        flex-direction: column;
+    }
+    .myMainBlockMainDiv {
+        justify-content: center;
+        width: 100%; 
+    }
+    .myMainBlockDiv {
+        display: none; 
+    }
+    .mainBlockTextDiv {
+        width: 90%;
+        margin: 0 auto; 
+    }
+    .mainBlockText {
+        font-size: 20px;
+        line-height: 30px;
+        width: 100%; 
+    }
+    .namePara {
+        font-size: 35px;
+        margin-top: 40px;
+    }
+    .expDiv {
+        max-width: 400px;
+    }
+    .expPara {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 500px) {
+    .mainBlockTextDiv {
+        width: 100%;
+        text-align: center; /* Center the text block */
+    }
+    .mainBlockTextDiv h1 {
+        font-size: 24px;
+    }
+    .mainBlockText {
+        font-size: 18px;
+    }
+    .matriculation {
+        font-size: 18px;
+        word-spacing: 3px;
+    }
+
+    /* Center the button and its content */
+    .githubDiv {
+        margin: 20px auto; 
+        display: block; 
+        width: 90%; 
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    /* Center the text content within the button */
+    .githubDiv span { 
+        text-align: center;
+    }
+
+    /* Show the image section */
+    .myMainBlockDiv {
+        display: block; 
+        width: 100%; 
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .myMainBlockDiv img {
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+@media (max-width: 350px) {
+    .mainBlockText {
+        font-size: 16px; 
+    }
+    .namePara{
+        font-size: 30px;
+    }
+    .expPara{
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,141 @@
+.mainSkill {
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    padding-top: 60px;
+}
+
+.skillSecondDiv {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.skillHeadDiv {
+    margin: 0 auto;
+    max-width: 410px;
+}
+
+.skillHead {
+    color: #304cd1;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mySkillsDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySkillsSecondDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.my_skills {
+    margin: 19px 15px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    background-color: #f5f5f7;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.5s, color 0.5s;
+    width: calc(33% - 36px);
+    box-sizing: border-box;
+    box-shadow: 0px 10px 10px 2px #d7d7d7;
+}
+
+.my_skills:hover {
+    background-color: rgb(4 210 184);
+    color: white !important;
+    transform: scale(1.05);
+}
+
+.my_skills_second {
+    font-size: 18px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.my_skills:hover .my_skills_second {
+    color: white;
+}
+
+.extra_div_my_skills {
+    position: absolute;
+    width: 0px;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: width 0.5s;
+    height: 100%;
+}
+
+.my_skills:hover .extra_div_my_skills {
+    width: 100%;
+}
+
+@media (max-width: 1150px) {
+    .mainSkill {
+        margin-top: 50px;
+    }
+
+    .skillSecondDiv {
+        width: 90%;
+    }
+
+    .mySkillsDiv {
+        margin-top: 70px;
+    }
+
+    .mySkillsSecondDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my_skills {
+        width: calc(45% - 20px);
+    }
+}
+
+@media (max-width: 870px) {
+    .mySkillsDiv {
+        margin-top: 90px;
+    }
+
+    .mySkillsFirstDiv {
+        width: 100%;
+    }
+
+    .mySkillsSecondDiv {
+        flex-direction: column;
+    }
+
+    .my_skills {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 500px) {
+    .skillHeadDiv {
+        width: 250px;
+    }
+
+    .mySkillsDiv {
+        margin-top: 70px;
+    }
+
+    .my_skills {
+        width: calc(100% - 20px);
+    }
+
+    .my_skills_second {
+        font-size: 16px;
+    }
+}
